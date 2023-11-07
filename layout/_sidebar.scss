@@ -1,0 +1,72 @@
+.barra-lateral {
+    grid-area: barra;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background-color: $secondary-color;
+    padding: 20px;
+    color: $text-color;
+    width: 200px;
+    height: 602px;
+  
+    #categorias {
+      h2 {
+        font-size: 1.5em;
+        margin: 0 0 10px 0;
+      }
+  
+      ul {
+        list-style: none;
+        padding: 0;
+  
+        li {
+          margin: 0;
+  
+          a {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: bold;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: grey;
+            }
+          }
+        }
+      }
+    }
+  
+    #filtros {
+      h2 {
+        font-size: 1.5em;
+        margin: 0 0 10px 0;
+      }
+  
+      label[for="precio"] {
+        font-weight: bold;
+      }
+  
+      input[type="range"] {
+        width: 100%;
+        margin: 0 0 5px 0;
+      }
+  
+      fieldset {
+        border: 1px solid white;
+        padding: 10px;
+  
+        legend {
+          font-weight: bold;
+        }
+  
+        input[type="radio"] {
+          margin: 5px 0;
+  
+          label[for^="opcion"] {
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+  

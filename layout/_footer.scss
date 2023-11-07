@@ -1,0 +1,59 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    color: $text-color;
+    padding: 20px;
+  
+    #informacion-tienda {
+      h2 {
+        font-size: 1.5em;
+        margin: 0;
+        color: $text-color;
+      }
+  
+      p {
+        font-size: 1em;
+        margin: 0 0 10px 0;
+        opacity: 0.8;
+      }
+  
+      .barra-separadora {
+        height: 100px;
+        width: 2px;
+        background-color: $text-color;
+        margin: 0 20px;
+        border-radius: 5px;
+      }
+  
+      #enlaces-interes {
+        h2 {
+          font-size: 1.5em;
+          margin: 0;
+          color: $text-color;
+        }
+  
+        ul {
+          list-style: none;
+          display: flex;
+          gap: 10px;
+  
+          li a {
+            text-decoration: none;
+            color: $text-color;
+            font-weight: bold;
+  
+            &:hover {
+              color: #ecf0f1;
+            }
+          }
+        }
+      }
+    }
+  }
+  
