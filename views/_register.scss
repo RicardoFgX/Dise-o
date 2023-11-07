@@ -1,0 +1,65 @@
+.formularioBody{
+    display: flex;
+  justify-content: center;
+  margin-top: 92px;
+  margin-bottom: 92px;
+  text-align: center;
+}
+
+.formulario {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    width: 50%; // Ocupa el 50% del ancho de la pantalla
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left; // Alinea el contenido del formulario a la izquierda
+  }
+
+legend {
+  font-weight: bold;
+  color: $primary-color;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #333; // Color del texto de las etiquetas
+}
+
+input, select, textarea {
+  width: 99%;
+  padding: 5px;
+  border: 1px solid #ccc; // Borde de los campos
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+input:hover, select:hover, textarea:hover {
+  border: 1px solid $primary-color; // Borde al pasar el mouse
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid $error-color; // Borde al enfocar
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border: 1px solid $error-color; // Borde en estado inválido
+}
+
+input:valid, select:valid, textarea:valid {
+  border: 1px solid $success-color; // Borde en estado válido
+}
+
+input[type="submit"] {
+  background-color: $primary-color;
+  color: #fff; // Color del texto del botón
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: darken($primary-color, 10%); // Color del botón al pasar el mouse
+}

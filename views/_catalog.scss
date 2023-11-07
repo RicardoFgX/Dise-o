@@ -12,8 +12,11 @@ body {
 
 /* Media Query */
 @media screen and (max-width: $small-screen) {
-    .barra-lateral {
+    .barra-lateral, .nombreEmpresa{
       display: none;
+    }
+    .producto{
+      width: calc(35%);
     }
   }
   
@@ -28,7 +31,7 @@ body {
   @media screen and (min-width: $large-screen-min) {
     #contenido-principal {
       .producto {
-        width: calc(40%);
+        width: calc(30%);
       }
     }
   }

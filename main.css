@@ -85,6 +85,7 @@ header nav ul li a:hover {
 }
 
 .barra-lateral {
+  z-index: 1;
   grid-area: barra;
   display: flex;
   flex-direction: column;
@@ -93,7 +94,6 @@ header nav ul li a:hover {
   padding: 20px;
   color: white;
   width: 200px;
-  height: 602px;
 }
 .barra-lateral #categorias h2 {
   font-size: 1.5em;
@@ -149,50 +149,52 @@ header nav ul li a:hover {
 }
 
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
+  z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background-color: #3498db;
-  color: white;
+  color: #fff;
   padding: 20px;
+}
+footer #informacion-tienda {
+  text-align: center;
 }
 footer #informacion-tienda h2 {
   font-size: 1.5em;
   margin: 0;
-  color: white;
+  color: #2B3C98;
 }
 footer #informacion-tienda p {
   font-size: 1em;
   margin: 0 0 10px 0;
   opacity: 0.8;
 }
-footer #informacion-tienda .barra-separadora {
+footer .barra-separadora {
   height: 100px;
   width: 2px;
-  background-color: white;
+  background-color: #fff;
   margin: 0 20px;
-  border-radius: 5px;
 }
-footer #informacion-tienda #enlaces-interes h2 {
+footer #enlaces-interes {
+  text-align: center;
+}
+footer #enlaces-interes h2 {
   font-size: 1.5em;
   margin: 0;
-  color: white;
+  color: #2B3C98;
 }
-footer #informacion-tienda #enlaces-interes ul {
+footer #enlaces-interes ul {
   list-style: none;
   display: flex;
   gap: 10px;
 }
-footer #informacion-tienda #enlaces-interes ul li a {
+footer #enlaces-interes ul li a {
   text-decoration: none;
-  color: white;
+  color: #2B3C98;
   font-weight: bold;
 }
-footer #informacion-tienda #enlaces-interes ul li a:hover {
+footer #enlaces-interes ul li a:hover {
   color: #ecf0f1;
 }
 
@@ -210,8 +212,11 @@ body {
 
 /* Media Query */
 @media screen and (max-width: 600px) {
-  .barra-lateral {
+  .barra-lateral, .nombreEmpresa {
     display: none;
+  }
+  .producto {
+    width: 35%;
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
@@ -221,6 +226,71 @@ body {
 }
 @media screen and (min-width: 1024px) {
   #contenido-principal .producto {
-    width: 40%;
+    width: 30%;
   }
+}
+.formularioBody {
+  display: flex;
+  justify-content: center;
+  margin-top: 92px;
+  margin-bottom: 92px;
+  text-align: center;
+}
+
+.formulario {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+legend {
+  font-weight: bold;
+  color: #3498db;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  color: #333;
+}
+
+input, select, textarea {
+  width: 99%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  margin-top: 5px;
+}
+
+input:hover, select:hover, textarea:hover {
+  border: 1px solid #3498db;
+}
+
+input:focus, select:focus, textarea:focus {
+  border: 1px solid #e74c3c;
+}
+
+input:invalid, select:invalid, textarea:invalid {
+  border: 1px solid #e74c3c;
+}
+
+input:valid, select:valid, textarea:valid {
+  border: 1px solid #2ecc71;
+}
+
+input[type=submit] {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: #217dbb;
 }/*# sourceMappingURL=main.css.map */
