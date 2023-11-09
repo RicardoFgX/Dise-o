@@ -1,4 +1,11 @@
 @charset "UTF-8";
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
 button {
   background-color: #3498db;
   color: white;
@@ -123,6 +130,7 @@ header nav ul li a:hover {
   font-weight: bold;
 }
 .barra-lateral #filtros input[type=range] {
+  color: #3498db;
   width: 100%;
   margin: 0 0 5px 0;
 }
@@ -198,13 +206,6 @@ footer #enlaces-interes ul li a:hover {
   color: #ecf0f1;
 }
 
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
 .grid-container {
   display: grid;
   grid-template-areas: "barra contenido";
@@ -229,15 +230,14 @@ body {
     width: 30%;
   }
 }
-.formularioBody {
+.formularioGlobal {
   display: flex;
   justify-content: center;
   margin-top: 92px;
   margin-bottom: 92px;
   text-align: center;
 }
-
-.formulario {
+.formularioGlobal .formulario {
   background-color: #fff;
   border-radius: 5px;
   padding: 20px;
@@ -245,44 +245,48 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: left;
 }
-
-legend {
+.formularioGlobal legend {
   font-weight: bold;
   color: #3498db;
 }
-
-label {
+.formularioGlobal label {
   display: block;
   margin-top: 10px;
   color: #333;
 }
-
-input, select, textarea {
+.formularioGlobal input,
+.formularioGlobal select,
+.formularioGlobal textarea {
   width: 99%;
-  padding: 5px;
+  height: 25px;
   border: 1px solid #ccc;
   border-radius: 3px;
   margin-top: 5px;
 }
-
-input:hover, select:hover, textarea:hover {
+.formularioGlobal input:hover,
+.formularioGlobal select:hover,
+.formularioGlobal textarea:hover {
   border: 1px solid #3498db;
 }
-
-input:focus, select:focus, textarea:focus {
-  border: 1px solid #e74c3c;
+.formularioGlobal input:focus,
+.formularioGlobal select:focus,
+.formularioGlobal textarea:focus {
+  border: 2px solid #e74c3c;
 }
-
-input:invalid, select:invalid, textarea:invalid {
-  border: 1px solid #e74c3c;
+.formularioGlobal input:invalid,
+.formularioGlobal select:invalid,
+.formularioGlobal textarea:invalid {
+  border: 2px solid #e74c3c;
 }
-
-input:valid, select:valid, textarea:valid {
-  border: 1px solid #2ecc71;
+.formularioGlobal input:valid,
+.formularioGlobal select:valid,
+.formularioGlobal textarea:valid {
+  border: 2px solid #2ecc71;
 }
-
-input[type=submit] {
+.formularioGlobal input[type=submit] {
   background-color: #3498db;
+  width: 100%;
+  height: 40px;
   color: #fff;
   padding: 10px 15px;
   border: none;
@@ -290,7 +294,6 @@ input[type=submit] {
   cursor: pointer;
   margin-top: 10px;
 }
-
-input[type=submit]:hover {
+.formularioGlobal input[type=submit]:hover {
   background-color: #217dbb;
 }/*# sourceMappingURL=main.css.map */

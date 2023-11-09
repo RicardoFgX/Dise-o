@@ -1,12 +1,11 @@
-.formularioBody{
-    display: flex;
+.formularioGlobal {
+  display: flex;
   justify-content: center;
   margin-top: 92px;
   margin-bottom: 92px;
   text-align: center;
-}
 
-.formulario {
+  .formulario {
     background-color: #fff;
     border-radius: 5px;
     padding: 20px;
@@ -15,51 +14,64 @@
     text-align: left; // Alinea el contenido del formulario a la izquierda
   }
 
-legend {
-  font-weight: bold;
-  color: $primary-color;
-}
+  legend {
+    font-weight: bold;
+    color: $primary-color;
+  }
 
-label {
-  display: block;
-  margin-top: 10px;
-  color: #333; // Color del texto de las etiquetas
-}
+  label {
+    display: block;
+    margin-top: 10px;
+    color: #333; // Color del texto de las etiquetas
+  }
 
-input, select, textarea {
-  width: 99%;
-  padding: 5px;
-  border: 1px solid #ccc; // Borde de los campos
-  border-radius: 3px;
-  margin-top: 5px;
-}
+  input,
+  select,
+  textarea {
+    width: 99%;
+    height: 25px;
+    border: 1px solid #ccc; // Borde de los campos
+    border-radius: 3px;
+    margin-top: 5px;
+  }
 
-input:hover, select:hover, textarea:hover {
-  border: 1px solid $primary-color; // Borde al pasar el mouse
-}
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border: 1px solid $primary-color; // Borde al pasar el mouse
+  }
 
-input:focus, select:focus, textarea:focus {
-  border: 1px solid $error-color; // Borde al enfocar
-}
+  input:focus,
+  select:focus,
+  textarea:focus {
+    border: 2px solid $error-color; // Borde al enfocar
+  }
 
-input:invalid, select:invalid, textarea:invalid {
-  border: 1px solid $error-color; // Borde en estado inválido
-}
+  input:invalid,
+  select:invalid,
+  textarea:invalid {
+    border: 2px solid $error-color; // Borde en estado inválido
+  }
 
-input:valid, select:valid, textarea:valid {
-  border: 1px solid $success-color; // Borde en estado válido
-}
+  input:valid,
+  select:valid,
+  textarea:valid {
+    border: 2px solid $success-color; // Borde en estado válido
+  }
 
-input[type="submit"] {
-  background-color: $primary-color;
-  color: #fff; // Color del texto del botón
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  margin-top: 10px;
-}
+  input[type="submit"] {
+    background-color: $primary-color;
+    width: 100%;
+    height: 40px;
+    color: #fff; // Color del texto del botón
+    padding: 10px 15px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
 
-input[type="submit"]:hover {
-  background-color: darken($primary-color, 10%); // Color del botón al pasar el mouse
+  input[type="submit"]:hover {
+    background-color: darken($primary-color, 10%); // Color del botón al pasar el mouse
+  }
 }

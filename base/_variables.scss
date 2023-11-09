@@ -11,3 +11,10 @@ $small-screen: 600px;
 $medium-screen-min: 601px;
 $medium-screen-max: 1023px;
 $large-screen-min: 1024px;
+
+body {
+    font-family: $font-family;
+    margin: 0;
+    padding: 0;
+    position: relative;
+  }
