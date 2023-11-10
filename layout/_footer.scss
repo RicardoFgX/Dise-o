@@ -1,10 +1,8 @@
 footer {
-  z-index: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: $primary-color;
-  color: #fff;
   padding: 20px;
   
   #informacion-tienda {
@@ -19,13 +17,14 @@ footer {
       font-size: 1em;
       margin: 0 0 10px 0;
       opacity: 0.8;
+      color: $text-color;
     }
   }
 
   .barra-separadora {
     height: 100px;
     width: 2px;
-    background-color: #fff;
+    background-color: $background-color;
     margin: 0 20px;
   }
 
@@ -48,7 +47,7 @@ footer {
         font-weight: bold;
 
         &:hover {
-          color: #ecf0f1;
+          color: $text-color;
         }
       }
     }

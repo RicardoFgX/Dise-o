@@ -3,7 +3,6 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  position: relative;
 }
 
 button {
@@ -19,22 +18,22 @@ button:hover {
 }
 
 .producto {
-  background-color: #fff;
-  border: 1px solid #ccc;
+  background-color: white;
+  border: 1px solid grey;
   border-radius: 5px;
   padding: 10px;
   margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 .producto img {
   max-width: 70%;
   height: auto;
+  border-radius: 10px;
 }
 .producto h3 {
   font-size: 1.2em;
   margin: 10px 0;
-  color: #333;
+  color: black;
 }
 .producto .precio {
   font-weight: bold;
@@ -61,7 +60,7 @@ header #logo {
   gap: 10px;
 }
 header #logo img {
-  max-width: 50px;
+  width: 50px;
 }
 header #logo h1 {
   font-size: 30px;
@@ -70,9 +69,9 @@ header #logo h1 {
   color: white;
 }
 header nav ul {
+  display: flex;
   list-style: none;
   padding: 0;
-  display: flex;
   margin-right: 20px;
 }
 header nav ul li {
@@ -88,11 +87,10 @@ header nav ul li a {
   transition: color 0.3s;
 }
 header nav ul li a:hover {
-  color: #ecf0f1;
+  color: #2B3C98;
 }
 
 .barra-lateral {
-  z-index: 1;
   grid-area: barra;
   display: flex;
   flex-direction: column;
@@ -137,32 +135,35 @@ header nav ul li a:hover {
 .barra-lateral #filtros fieldset {
   border: 1px solid white;
   padding: 10px;
+  margin-top: 20px;
 }
 .barra-lateral #filtros fieldset legend {
   font-weight: bold;
 }
-.barra-lateral #filtros fieldset input[type=radio] {
-  margin: 5px 0;
+.barra-lateral #filtros fieldset ul {
+  list-style: none;
+  padding-left: 20px;
 }
-.barra-lateral #filtros fieldset input[type=radio] label[for^=opcion] {
-  margin-left: 5px;
+.barra-lateral #filtros fieldset ul li {
+  margin: 0;
+}
+.barra-lateral #filtros fieldset ul li input[type=radio] {
+  margin: 5px 0;
 }
 
 #contenido-principal {
   grid-area: contenido;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   margin: 10px;
 }
 
 footer {
-  z-index: 2;
   display: flex;
   justify-content: space-around;
   align-items: center;
   background-color: #3498db;
-  color: #fff;
   padding: 20px;
 }
 footer #informacion-tienda {
@@ -177,11 +178,12 @@ footer #informacion-tienda p {
   font-size: 1em;
   margin: 0 0 10px 0;
   opacity: 0.8;
+  color: white;
 }
 footer .barra-separadora {
   height: 100px;
   width: 2px;
-  background-color: #fff;
+  background-color: white;
   margin: 0 20px;
 }
 footer #enlaces-interes {
@@ -203,7 +205,7 @@ footer #enlaces-interes ul li a {
   font-weight: bold;
 }
 footer #enlaces-interes ul li a:hover {
-  color: #ecf0f1;
+  color: white;
 }
 
 .grid-container {
@@ -238,11 +240,11 @@ footer #enlaces-interes ul li a:hover {
   text-align: center;
 }
 .formularioGlobal .formulario {
-  background-color: #fff;
-  border-radius: 5px;
+  background-color: white;
   padding: 20px;
   width: 50%;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
   text-align: left;
 }
 .formularioGlobal legend {
@@ -252,42 +254,26 @@ footer #enlaces-interes ul li a:hover {
 .formularioGlobal label {
   display: block;
   margin-top: 10px;
-  color: #333;
+  color: black;
 }
-.formularioGlobal input,
-.formularioGlobal select,
-.formularioGlobal textarea {
+.formularioGlobal input {
   width: 99%;
   height: 25px;
-  border: 1px solid #ccc;
+  border: 1px solid grey;
   border-radius: 3px;
   margin-top: 5px;
 }
-.formularioGlobal input:hover,
-.formularioGlobal select:hover,
-.formularioGlobal textarea:hover {
-  border: 1px solid #3498db;
-}
-.formularioGlobal input:focus,
-.formularioGlobal select:focus,
-.formularioGlobal textarea:focus {
+.formularioGlobal input:invalid {
   border: 2px solid #e74c3c;
 }
-.formularioGlobal input:invalid,
-.formularioGlobal select:invalid,
-.formularioGlobal textarea:invalid {
-  border: 2px solid #e74c3c;
-}
-.formularioGlobal input:valid,
-.formularioGlobal select:valid,
-.formularioGlobal textarea:valid {
+.formularioGlobal input:valid {
   border: 2px solid #2ecc71;
 }
 .formularioGlobal input[type=submit] {
   background-color: #3498db;
   width: 100%;
   height: 40px;
-  color: #fff;
+  color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 3px;

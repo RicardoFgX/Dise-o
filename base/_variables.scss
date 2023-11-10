@@ -1,11 +1,22 @@
 // Estilos generales
 $font-family: Arial, sans-serif;
+
 $primary-color: #3498db;
 $secondary-color: #2B3C98;
-$text-color: white;
-$error-color: #e74c3c;
-$success-color: #2ecc71; 
 
+$background-color: white;
+$button-hover-background-color: #2b78c4;
+
+$text-color: white;
+$card-border-color: grey;
+$card-text-color: black;
+
+$normal-color: black;
+$error-color: #e74c3c;
+$success-color: #2ecc71;
+$input-border-color: grey;
+
+$register-label-color: black;
 // Puntos de ruptura para los media
 $small-screen: 600px;
 $medium-screen-min: 601px;
@@ -16,5 +27,4 @@ body {
     font-family: $font-family;
     margin: 0;
     padding: 0;
-    position: relative;
   }
