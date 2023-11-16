@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="main.css">
     <title>Ejemplo Tienda</title>
 </head>
-<body>
+<body id="paginaPrincipal">
     <header>
         <div id="logo">
             <img src="images/LogoPagina.png" alt="LogoTienda">
@@ -21,7 +21,7 @@
             </ul>
         </nav>
     </header>
-    <div class="grid-container">
+
         <div class="barra-lateral">
             <section id="categorias">
                 <h2>Categorías</h2>
@@ -38,19 +38,32 @@
                 <fieldset>
                     <legend>Aroma/Fragancia</legend>
                     <ul>
-                        <li><input type="radio" id="opcion1" name="filtrado1">
-                            <label for="opcion">Cítricos</label></li>
-                        <li><input type="radio" id="opcion2" name="filtrado1">
-                            <label for="opcion2">Floral</label></li>
-                        <li><input type="radio" id="opcion3" name="filtrado1">
-                            <label for="opcion3">Herbal</label></li>
-                        <li><input type="radio" id="opcion4" name="filtrado1">
-                            <label for="opcion4">Menta</label></li>
-                        <li><input type="radio" id="opcion5" name="filtrado1">
-                            <label for="opcion5">Lavanda</label></li>
-                        <li><input type="radio" id="opcion6" name="filtrado1">
-                            <label for="opcion6">Sin Fragancia</label></li>
+                        <li>
+                            <input type="radio" id="opcion1" name="filtrado1">
+                            <label for="opcion1">Cítricos</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="opcion2" name="filtrado1">
+                            <label for="opcion2">Floral</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="opcion3" name="filtrado1">
+                            <label for="opcion3">Herbal</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="opcion4" name="filtrado1">
+                            <label for="opcion4">Menta</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="opcion5" name="filtrado1">
+                            <label for="opcion5">Lavanda</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="opcion6" name="filtrado1">
+                            <label for="opcion6">Sin Fragancia</label>
+                        </li>
                     </ul>
+                    
                 </fieldset>
             </section>
         </div>
@@ -108,7 +121,9 @@
                 <h3>Producto 9</h3>
                 <span class="precio">15.99</span>
                 <button>Agregar al carrito</button>
+                
             </div>
+            <p class="usoImagenes">Todas las imagenes son de uso libre del sito web <a href="https://www.pexels.com">Pexels</a></p>
         </main>
     </div>
     <footer>

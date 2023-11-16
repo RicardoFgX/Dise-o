@@ -1,12 +1,16 @@
+// Estilo del Footer
 footer {
+  grid-area: footer; // Coloca el pie de página en un área específica del grid
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-around; // Distribuye uniformemente el espacio entre los elementos secundarios
+  align-items: center; // Centra verticalmente los elementos secundarios
   background-color: $primary-color;
   padding: 20px;
-  
+
+  // Estilo de la información de la tienda
   #informacion-tienda {
     text-align: center;
+
     h2 {
       font-size: 1.5em;
       margin: 0;
@@ -15,12 +19,12 @@ footer {
 
     p {
       font-size: 1em;
-      margin: 0 0 10px 0;
-      opacity: 0.8;
-      color: $text-color;
+      margin-top: 0px;
+      color: $text-color; // Color del texto, utilizando la variable $text-color
     }
   }
 
+  // Barra separadora entre secciones del pie de página
   .barra-separadora {
     height: 100px;
     width: 2px;
@@ -28,8 +32,10 @@ footer {
     margin: 0 20px;
   }
 
+  // Enlaces de interés en el pie de página
   #enlaces-interes {
     text-align: center;
+
     h2 {
       font-size: 1.5em;
       margin: 0;
@@ -42,12 +48,13 @@ footer {
       gap: 10px;
 
       li a {
-        text-decoration: none;
+        text-decoration: none; // Elimina la decoración que tiene por defecto el enlace
         color: $secondary-color;
         font-weight: bold;
 
+        // Estilo al pasar el ratón sobre el enlace
         &:hover {
-          color: $text-color;
+          color: $text-color; // Cambia el color del texto al pasar el ratón, utilizando la variable $text-color
         }
       }
     }

@@ -1,8 +1,13 @@
+// Estilo para el "contenido-principal"
 #contenido-principal {
-    grid-area: contenido;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px;
-  }
-  
+  grid-area: contenido; // Utiliza el área de la cuadrícula llamada "contenido"
+  display: flex;
+  flex-wrap: wrap; // Permite que los elementos se envuelvan en múltiples líneas si no caben en una sola
+  justify-content: space-around;
+  margin: 10px;
+}
+
+// Estilo para el texto usoImagenes
+.usoImagenes {
+  font-weight: bold;
+}

@@ -1,30 +1,36 @@
-// Estilos generales
-$font-family: Arial, sans-serif;
+// Variables tipografía
+$font-family: Arial,
+sans-serif; // Fuente para tipografía general
 
-$primary-color: #3498db;
-$secondary-color: #2B3C98;
+// Variables de colores
+$primary-color: #3498db; // Color principal 
+$secondary-color: #2B3C98; // Color secundario
 
-$background-color: white;
-$button-hover-background-color: #2b78c4;
+$background-color: white; // Color de fondo
+$button-hover-background-color: #2b78c4; // Color de fondo al pasar el ratón sobre un botón
 
-$text-color: white;
-$card-border-color: grey;
-$card-text-color: black;
+$text-color: white; // Color de texto principal
+$card-border-color: grey; // Color del borde de las tarjetas de los productos
+$card-text-color: black; // Color de texto en las tarjetas de los productos
 
-$normal-color: black;
-$error-color: #e74c3c;
-$success-color: #2ecc71;
-$input-border-color: grey;
+$focus-color: black; // Color al enfocar en formulario
+$error-color: #e74c3c; // Color de error en formulario
+$success-color: #2ecc71; // Color de éxito en formulario
 
-$register-label-color: black;
-// Puntos de ruptura para los media
-$small-screen: 600px;
-$medium-screen-min: 601px;
-$medium-screen-max: 1023px;
-$large-screen-min: 1024px;
+$input-border-color: grey; // Color del borde de los campos de entrada
 
+$register-label-color: black; // Color de etiquetas en el formulario de registro
+
+// Variables valores para los distintos tamaños de pantallas
+
+$small-screen: 600px; // Pantallas pequeñas
+$medium-screen-min: 601px; // Pantallas medianas (mínimo)
+$medium-screen-max: 1023px; // Pantallas medianas (máximo)
+$large-screen-min: 1024px; // Pantallas grandes (mínimo)
+
+// Configuración estandar para todas las pantallas
 body {
     font-family: $font-family;
     margin: 0;
     padding: 0;
-  }
+}

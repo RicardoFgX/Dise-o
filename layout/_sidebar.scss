@@ -1,32 +1,38 @@
+// Estilo para el elemento "barra-lateral"
 .barra-lateral {
-  grid-area: barra;
+  grid-area: barra; // Utiliza el área de la cuadrícula llamada "barra"
   display: flex;
-  flex-direction: column;
+  flex-direction: column; // Establece la dirección de los elementos hijos como columna
   gap: 0;
   background-color: $secondary-color;
   padding: 20px;
   color: $text-color;
   width: 200px;
 
+  // Estilo para el elemento "categorias" dentro de .barra-lateral
   #categorias {
     h2 {
       font-size: 1.5em;
       margin: 0 0 10px 0;
     }
 
+    // Estilo para la lista no ordenada dentro de "categorias"
     ul {
-      list-style: none;
+      list-style: none; // Elimina los estilos de lista predeterminados
       padding: 0;
 
+      // Estilo para los elementos li dentro de la lista
       li {
         margin: 0;
 
+        // Estilo para los enlaces dentro de los elementos li
         a {
           text-decoration: none;
           color: $text-color;
           font-weight: bold;
           transition: color 0.3s;
 
+          // Estilo al pasar el ratón por encima
           &:hover {
             color: grey;
           }
@@ -35,38 +41,46 @@
     }
   }
 
+  // Estilo para el elemento "filtros" dentro de .barra-lateral
   #filtros {
     h2 {
       font-size: 1.5em;
       margin: 0 0 10px 0;
     }
 
+    // Estilo para la etiqueta "for" igual a "precio" dentro de "filtros"
     label[for="precio"] {
       font-weight: bold;
     }
 
+    // Estilo para el input de tipo "range" dentro de "filtros"
     input[type="range"] {
       color: $primary-color;
       width: 100%;
       margin: 0 0 5px 0;
     }
 
+    // Estilo para el fieldset dentro de "filtros"
     fieldset {
       border: 1px solid white;
       padding: 10px;
       margin-top: 20px;
 
+      // Estilo para la leyenda dentro de fieldset
       legend {
         font-weight: bold;
       }
 
+      // Estilo para la lista dentro de fieldset
       ul {
         list-style: none;
         padding-left: 20px;
 
+        // Estilo para los elementos li dentro de la lista
         li {
           margin: 0;
 
+          // Estilo para el input de tipo "radio" dentro de los elementos li
           input[type="radio"] {
             margin: 5px 0;
           }

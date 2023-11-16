@@ -77,9 +77,6 @@ header nav ul {
 header nav ul li {
   margin-right: 20px;
 }
-header nav ul li:last-child {
-  margin-right: 0;
-}
 header nav ul li a {
   text-decoration: none;
   color: white;
@@ -88,6 +85,9 @@ header nav ul li a {
 }
 header nav ul li a:hover {
   color: #2B3C98;
+}
+header nav ul li:last-child {
+  margin-right: 0;
 }
 
 .barra-lateral {
@@ -159,7 +159,12 @@ header nav ul li a:hover {
   margin: 10px;
 }
 
+.usoImagenes {
+  font-weight: bold;
+}
+
 footer {
+  grid-area: footer;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -176,8 +181,7 @@ footer #informacion-tienda h2 {
 }
 footer #informacion-tienda p {
   font-size: 1em;
-  margin: 0 0 10px 0;
-  opacity: 0.8;
+  margin-top: 0px;
   color: white;
 }
 footer .barra-separadora {
@@ -208,23 +212,28 @@ footer #enlaces-interes ul li a:hover {
   color: white;
 }
 
-.grid-container {
+#paginaPrincipal {
   display: grid;
-  grid-template-areas: "barra contenido";
+  grid-template-areas: "header header" "barra contenido" "footer footer";
 }
 
-/* Media Query */
+/* Media Query para pantallas pequeñas */
 @media screen and (max-width: 600px) {
-  .barra-lateral, .nombreEmpresa {
+  .barra-lateral,
+  .nombreEmpresa {
     display: none;
   }
-  .producto {
+  #contenido-principal .producto {
     width: 35%;
+  }
+  #paginaPrincipal {
+    display: grid;
+    grid-template-areas: "header header" "contenido contenido" "footer footer";
   }
 }
 @media screen and (min-width: 601px) and (max-width: 1023px) {
   #contenido-principal .producto {
-    width: 35%;
+    width: 42%;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -256,6 +265,10 @@ footer #enlaces-interes ul li a:hover {
   margin-top: 10px;
   color: black;
 }
+.formularioGlobal label ::after {
+  content: "*";
+  color: black;
+}
 .formularioGlobal input {
   width: 99%;
   height: 25px;
@@ -268,6 +281,13 @@ footer #enlaces-interes ul li a:hover {
 }
 .formularioGlobal input:valid {
   border: 2px solid #2ecc71;
+}
+.formularioGlobal input:focus {
+  border: 2px solid #3498db;
+  outline: none;
+}
+.formularioGlobal input:hover {
+  border: 2px solid #3498db;
 }
 .formularioGlobal input[type=submit] {
   background-color: #3498db;
