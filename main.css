@@ -59,11 +59,23 @@ header #logo {
   align-items: center;
   gap: 10px;
 }
-header #logo img {
-  width: 50px;
+header #logo .logo-container {
+  min-width: 60px;
+  max-width: 60px;
+  min-height: 60px;
+  max-height: 60px;
+  border-radius: 50%;
+  background-color: white;
+}
+header #logo .logo-container .logo-img {
+  width: 100%;
+  height: auto;
+}
+header #logo .logo-container .logo-img .log-svg {
+  fill: red;
 }
 header #logo h1 {
-  font-size: 30px;
+  font-size: 150%;
   font-family: cursive;
   margin: 0;
   color: white;

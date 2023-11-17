@@ -5,13 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
     <title>Ejemplo Tienda</title>
+    <style>
+    .colorize {
+        filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(180deg);
+      }
+    </style>
 </head>
 <body id="paginaPrincipal">
     <header>
         <div id="logo">
-            <img src="images/LogoPagina.png" alt="LogoTienda">
+            <div class="logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="logo-img">
+                    <!-- Utiliza la etiqueta <image> para cargar la imagen SVG -->
+                    <image href="images/LogoPagina.svg" width="100" height="100" class="colorize" />
+                </svg>
+            </div>
+        
             <h1 class="nombreEmpresa">Candy Soap</h1>
         </div>
+        <!--
+        <div id="logo">
+            <!<div class="logo-container">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="logo-img">
+                    <image href="images/LogoPagina.svg" width="100" height="100" class="log-svg"/>
+                </svg>
+            </div>
+        
+            <h1 class="nombreEmpresa">Candy Soap</h1>
+        </div>
+        -->
+        <!--<svg xmlns="http://www.w3.org/2000/svg" class="logo-img">
+            <image href="images/LogoPagina.svg"/>
+        </svg>
+    -->
         <nav>
             <ul>
                 <li><a href="#">Inicio</a></li>

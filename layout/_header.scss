@@ -14,14 +14,32 @@ header {
     align-items: center;
     gap: 10px;
 
-    // Estilo para la imagen dentro de #logo
-    img {
-      width: 50px;
+    .logo-container {
+      min-width: 60px;
+      max-width: 60px;
+      min-height: 60px;
+      max-height: 60px;
+      border-radius: 50%;
+      background-color: white;
+      //overflow: hidden;
+      //margin-right: 10px;
+
+      .logo-img {
+        width: 100%;
+        height: auto;
+        
+        .log-svg{
+          fill: red;
+        }
+      }
+
     }
+
+
 
     // Estilo para el encabezado h1 dentro de #logo
     h1 {
-      font-size: 30px;
+      font-size: 150%;
       font-family: cursive;
       margin: 0;
       color: $text-color;
