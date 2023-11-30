@@ -20,7 +20,7 @@ footer {
     p {
       font-size: 1em;
       margin-top: 0px;
-      color: $text-color; // Color del texto, utilizando la variable $text-color
+      color: $text-color1; // Color del texto, utilizando la variable $text-color
     }
   }
 
@@ -54,9 +54,18 @@ footer {
 
         // Estilo al pasar el ratón sobre el enlace
         &:hover {
-          color: $text-color; // Cambia el color del texto al pasar el ratón, utilizando la variable $text-color
+          color: $text-color1; // Cambia el color del texto al pasar el ratón, utilizando la variable $text-color
         }
       }
     }
   }
+  a{
+    cursor: pointer;
+    
+    #licencia {
+      width: 150px;
+    }
+  }
+    
+
 }

@@ -6,8 +6,13 @@
   gap: 0;
   background-color: $secondary-color;
   padding: 20px;
-  color: $text-color;
+  color: $text-color2;
   width: 200px;
+
+  img {
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
 
   // Estilo para el elemento "categorias" dentro de .barra-lateral
   #categorias {
@@ -28,7 +33,7 @@
         // Estilo para los enlaces dentro de los elementos li
         a {
           text-decoration: none;
-          color: $text-color;
+          color: $text-color3;
           font-weight: bold;
           transition: color 0.3s;
 
@@ -55,10 +60,23 @@
 
     // Estilo para el input de tipo "range" dentro de "filtros"
     input[type="range"] {
+      -webkit-appearance: none;
+      cursor: pointer;
+      width: 15rem;
       color: $primary-color;
       width: 100%;
-      margin: 0 0 5px 0;
+      margin: 5px 0 5px 0;
+      border-radius: 10px;
+
+      &::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        width: 15px;
+        height: 15px;
+        border-radius: 50%; // Slide redondo
+        background: $primary-color; // Color del Slide
+      }
     }
+
 
     // Estilo para el fieldset dentro de "filtros"
     fieldset {

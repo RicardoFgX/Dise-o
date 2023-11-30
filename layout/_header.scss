@@ -5,7 +5,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: $primary-color;
-  color: $text-color;
+  color: $text-color1;
   padding: 10px;
 
   // Estilo para el elemento con el id "logo" dentro de header
@@ -38,7 +38,7 @@ header {
       font-size: 150%;
       font-family: cursive;
       margin: 0;
-      color: $text-color;
+      color: $text-color1;
     }
   }
 
@@ -51,12 +51,12 @@ header {
 
     // Estilo para los elementos li dentro de la lista
     li {
-      margin-right: 20px;
+      margin-right: 50px;
 
       // Estilo para los enlaces de las opciones de navegación
       a {
         text-decoration: none;
-        color: $text-color;
+        color: $text-color1;
         font-weight: bold;
         transition: color 0.3s;
 
@@ -64,6 +64,15 @@ header {
         &:hover {
           color: $secondary-color;
         }
+
+        i{
+          font-size: 30px;
+        }
+
+      }
+
+      .fa-regular.fa-bell:hover {
+        animation: vibrar 0.2s infinite;
       }
 
       // Estilo para el último elemento li dentro de la lista
@@ -71,5 +80,23 @@ header {
         margin-right: 0; // Elimina el margen a la derecha para el último elemento
       }
     }
+  }
+}
+
+@keyframes vibrar {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
   }
 }

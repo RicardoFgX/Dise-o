@@ -31,7 +31,7 @@ button:hover {
   border-radius: 10px;
 }
 .producto h3 {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin: 10px 0;
   color: black;
 }
@@ -84,7 +84,7 @@ header nav ul {
   margin-right: 20px;
 }
 header nav ul li {
-  margin-right: 20px;
+  margin-right: 50px;
 }
 header nav ul li a {
   text-decoration: none;
@@ -93,21 +93,48 @@ header nav ul li a {
   transition: color 0.3s;
 }
 header nav ul li a:hover {
-  color: #2B3C98;
+  color: #88D2EF;
+}
+header nav ul li a i {
+  font-size: 30px;
+}
+header nav ul li .fa-regular.fa-bell:hover {
+  animation: vibrar 0.2s infinite;
 }
 header nav ul li:last-child {
   margin-right: 0;
 }
 
+@keyframes vibrar {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-2px);
+  }
+  100% {
+    transform: translateX(2px);
+  }
+}
 .barra-lateral {
   grid-area: barra;
   display: flex;
   flex-direction: column;
   gap: 0;
-  background-color: #2B3C98;
+  background-color: #88D2EF;
   padding: 20px;
-  color: white;
+  color: black;
   width: 200px;
+}
+.barra-lateral img {
+  margin-bottom: 10px;
+  border-radius: 5px;
 }
 .barra-lateral #categorias h2 {
   font-size: 1.5em;
@@ -122,7 +149,7 @@ header nav ul li:last-child {
 }
 .barra-lateral #categorias ul li a {
   text-decoration: none;
-  color: white;
+  color: #4D4D4D;
   font-weight: bold;
   transition: color 0.3s;
 }
@@ -137,9 +164,20 @@ header nav ul li:last-child {
   font-weight: bold;
 }
 .barra-lateral #filtros input[type=range] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  width: 15rem;
   color: #3498db;
   width: 100%;
-  margin: 0 0 5px 0;
+  margin: 5px 0 5px 0;
+  border-radius: 10px;
+}
+.barra-lateral #filtros input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #3498db;
 }
 .barra-lateral #filtros fieldset {
   border: 1px solid white;
@@ -186,7 +224,7 @@ footer #informacion-tienda {
 footer #informacion-tienda h2 {
   font-size: 1.5em;
   margin: 0;
-  color: #2B3C98;
+  color: #88D2EF;
 }
 footer #informacion-tienda p {
   font-size: 1em;
@@ -205,7 +243,7 @@ footer #enlaces-interes {
 footer #enlaces-interes h2 {
   font-size: 1.5em;
   margin: 0;
-  color: #2B3C98;
+  color: #88D2EF;
 }
 footer #enlaces-interes ul {
   list-style: none;
@@ -214,11 +252,17 @@ footer #enlaces-interes ul {
 }
 footer #enlaces-interes ul li a {
   text-decoration: none;
-  color: #2B3C98;
+  color: #88D2EF;
   font-weight: bold;
 }
 footer #enlaces-interes ul li a:hover {
   color: white;
+}
+footer a {
+  cursor: pointer;
+}
+footer a #licencia {
+  width: 150px;
 }
 
 #paginaPrincipal {
