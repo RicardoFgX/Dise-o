@@ -46,15 +46,6 @@ button:hover {
   color: #3498db;
 }
 
-header {
-  grid-area: header;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #3498db;
-  color: white;
-  padding: 5px;
-}
 header #logo {
   display: flex;
   align-items: center;
@@ -149,6 +140,10 @@ header .bi-bell {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   padding-right: 1rem;
+}
+
+.navbar-custom {
+  background-color: #3498db;
 }
 
 .barra-lateral {

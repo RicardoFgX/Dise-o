@@ -1,14 +1,8 @@
 // Estilo para el elemento header
 header {
-  grid-area: header; // Utiliza el área de la cuadrícula llamada "header"
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: $primary-color;
-  color: $text-color1;
-  padding: 5px;
 
   // Estilo para el elemento con el id "logo" dentro de header
+  
   #logo {
     display: flex;
     align-items: center;
@@ -92,5 +86,9 @@ header {
   padding-top: .5rem;
   padding-bottom: .5rem;
   padding-right: 1rem;
+}
+
+.navbar-custom {
+  background-color: #3498db;
 }
 
