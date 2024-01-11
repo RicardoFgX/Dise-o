@@ -1,6 +1,7 @@
 // Estilo para el elemento con el id "paginaPrincipal"
 #paginaPrincipal {
   display: grid; // Utiliza un modelo de caja de cuadrícula
+  overflow: hidden;
   grid-template-areas:
     "header header"
     "barra contenido"
@@ -15,10 +16,8 @@
     display: none; // Oculta elementos con las clases .barra-lateral y .nombreEmpresa
   }
 
-  #contenido-principal {
-    .producto {
-      width: calc(35%); // Establece el ancho del 35% para elementos con la clase .producto dentro de #contenido-principal
-    }
+  #licencia{
+    display: none;
   }
 
   //Configura el grid ahora que no tiene el elemento "barra lateral"
@@ -33,18 +32,9 @@
 
 // Media Query para pantallas medianas
 @media screen and (min-width: $medium-screen-min) and (max-width: $medium-screen-max) {
-  #contenido-principal {
-    .producto {
-      width: calc(42%); // Establece el ancho del 42% para elementos con la clase .producto dentro de #contenido-principal
-    }
-  }
+  // Muestra las tarjetas en 2 columnas en pantallas medianas
 }
 
 // Media Query para pantallas grandes
 @media screen and (min-width: $large-screen-min) {
-  #contenido-principal {
-    .producto {
-      width: calc(30%); // Establece el ancho del 30% para elementos con la clase .producto dentro de #contenido-principal
-    }
-  }
 }

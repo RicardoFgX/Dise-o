@@ -1,14 +1,13 @@
 // Estilo de Botón
 button {
-  background-color: $primary-color; // Color de fondo del botón, utilizando la variable $primary-color
-  color: $text-color1; // Color del texto en el botón, utilizando la variable $text-color
+  background-color: $primary-color;
+  color: $text-color1;
   border: none;
-  padding: 5px 10px;
+  padding: 8px 15px; // Ajusta el padding según sea necesario
   border-radius: 5px;
-  cursor: pointer; // Cambia el cursor a una mano al pasar sobre el botón
+  cursor: pointer;
 
-  // Estilo al pasar el ratón sobre el botón
   &:hover {
-    background-color: $button-hover-background-color; // Cambia el color de fondo al pasar el ratón, utilizando la variable $button-hover-background-color
+      background-color: $button-hover-background-color;
   }
 }

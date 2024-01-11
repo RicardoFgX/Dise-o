@@ -1,33 +1,29 @@
 // Estilo de Producto
 .producto {
-    background-color: $background-color; // Color de fondo del producto, utilizando la variable $background-color
-    border: 1px solid $card-border-color; // Borde del producto con color definido por $card-border-color
+    width: 100%; // Opcional: Utiliza el 100% del ancho disponible
+    background-color: $background-color;
+    border: 1px solid $card-border-color;
     border-radius: 5px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: center;
 
-    // Estilo de la imagen dentro del producto
     img {
-        max-width: 70%; // Ancho máximo del 70% para la imagen del producto
-        height: auto; // Altura automática para mantener la proporción
+        width: 100%;
+        height: auto;
         border-radius: 10px;
     }
 
-    // Estilo del título del producto
     h3 {
         font-size: 1.5em;
         margin: 10px 0;
         color: $card-text-color;
-        
     }
 
-    // Estilo del precio del producto
     .precio {
         font-weight: bold;
         color: $primary-color;
 
-        // Pseudo-elemento ::after para agregar el símbolo de Euro al precio
         &::after {
             content: " €";
             font-weight: bold;

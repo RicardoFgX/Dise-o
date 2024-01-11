@@ -34,7 +34,7 @@ footer {
 
   // Enlaces de interés en el pie de página
   #enlaces-interes {
-    text-align: center;
+    text-align: left;
 
     h2 {
       font-size: 1.5em;
@@ -59,13 +59,18 @@ footer {
       }
     }
   }
-  a{
+
+  a {
     cursor: pointer;
-    
+
+    //Estilo imagen de licencia de uso
     #licencia {
-      width: 150px;
+      max-width: 100%; // Ancho máximo del 100% del contenedor padre
+      height: auto; // Mantiene la proporción original de la imagen
+      width: 150px; // Ancho inicial de la imagen
+      margin-left: 20px;
     }
   }
-    
+
 
 }
