@@ -46,6 +46,9 @@ button:hover {
   color: #3498db;
 }
 
+header {
+  grid-area: header;
+}
 header #logo {
   display: flex;
   align-items: center;

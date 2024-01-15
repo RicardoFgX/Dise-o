@@ -13,48 +13,56 @@
 
 <body>
     <header>
-        <div id="logo">
-            <div class="logo-container">
-                <svg xmlns="http://www.w3.org/2000/svg" class="logo-img">
-                    <a href="paginaPrincipal.html">
-                        <image href="images/LogoPagina.svg" width="60" height="60" />
-                    </a>
-                </svg>
+        <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+            <div id="logo">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="logo-img">
+                        <a href="paginaPrincipal.html">
+                            <image href="images/LogoPagina.svg" width="60" height="60" />
+                        </a>
+                    </svg>
+                </div>
+                <h1 class="nombreEmpresa">Candy Soap</h1>
             </div>
-            <h1 class="nombreEmpresa">Candy Soap</h1>
-        </div>
-        <ul class="nav">
-            <li class="nav-item">
-                <a href="paginaPrincipal.html" class="nav-link text-white">
-                    <i class="bi bi-house-door align-middle"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="formulario.html" class="nav-link text-white">
-                    <i class="bi bi-table align-middle"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-grid align-middle"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="stacked1 text-white">
-                    <i class="bi bi-cart align-middle"></i>
-                </a>
-            </li>
-            <li class="nav-item shaked">
-                <a href="#" class="stacked2 text-white">
-                    <i class="bi bi-bell align-middle"></i>
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link text-white">
-                    <i class="bi bi-person-circle align-middle"></i>
-                </a>
-            </li>
-        </ul>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="paginaPrincipal.html">
+                            <i class="bi bi-house-door"></i> Inicio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-info-circle"></i> Acerca de Nosotros
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="bi bi-envelope"></i> Contacto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="stacked1 nav-link" style="padding-right: 0rem;">
+                            <i class="bi bi-cart align-middle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item shaked">
+                        <a href="#" class=" stacked2 nav-link" style="padding-left: 0rem">
+                            <i class="bi bi-bell align-middle"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="formulario.html">
+                            <i class="bi bi-person-circle"></i> Login/Registro
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </header>
     <div class="formularioGlobal">
         <form action="#" method="post" class="formulario">
@@ -107,6 +115,10 @@
             </ul>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
